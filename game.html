@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Adventure Game</title>
+    <link rel="stylesheet" href="game-style.css">
+</head>
+<body>
+    <header class="game-header">
+        <h1>Campus Adventure</h1>
+        <div class="score">Score: <span id="score">0</span></div>
+        <button id="resetGame">Restart Game</button>
+    </header>
+
+    <div class="game-container">
+        <h2>Explore the Campus</h2>
+        <p>Select a location to explore:</p>
+        <div class="locations">
+            <button class="location" data-location="library">Library</button>
+            <button class="location" data-location="gym">Gym</button>
+            <button class="location" data-location="cafeteria">Cafeteria</button>
+            <button class="location" data-location="lab">Science Lab</button>
+        </div>
+        <div class="location-info" id="locationInfo"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
